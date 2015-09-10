@@ -1,0 +1,145 @@
+/*
+  * 
+  * Header
+  *
+  */
+
+// header container
+.site-header {
+	text-align: center;
+
+	@media screen and (min-width: $small-screen) {
+		height: 60px;
+		line-height: 60px;
+	}
+}
+
+.site-brand {
+
+	@media screen and (min-width: $small-screen) {
+		float: left;
+	}
+
+	
+
+	
+}
+
+.site-logo {
+	width: 3.5em;
+	display: inline-block;
+	margin: 1em;
+
+	@media screen and (min-width: $small-screen) {
+		float: left;
+		margin: .4em 1em;
+	}
+}
+.site-name {
+	display: block;
+	margin: 0 0 1.5em;
+
+	@media screen and (min-width: $small-screen) {
+		float: left;
+	}
+
+	h1 {
+		font-size: 1em;
+
+		@media screen and (min-width: $small-screen) {
+			margin: 0;
+			line-height: 4.7em;
+		}
+	}
+}
+
+// nav group
+.site-nav {
+
+	@media screen and (min-width: $small-screen) {
+		float: right;
+		margin: 0 1em;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: .8em;
+			letter-spacing: $base-letter-spacing;
+			padding: 0 .5em;
+			vertical-align: middle;
+
+			@media screen and (min-width: $small-screen) {
+				float: left;
+			}
+
+			&:last-child,
+			&:nth-last-child(2) {
+				padding: 0;
+			}
+
+			a {
+				color: $header-font-color;
+				display: inline-block;
+
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+
+.share-links {
+	@media screen and (min-width: $small-screen) {
+		float: right;
+		margin: 0 1em;
+	}
+
+	.share-text {
+		display: block;
+		font-size: .8em;
+		letter-spacing: .07em;
+		text-transform: uppercase;
+		margin: .5em 1em;
+
+		@media screen and (min-width: $small-screen) {
+			display: inline-block;
+		}
+	}
+}
+
+.share-button {
+	width: 2.5em;
+	height: 2.5em;
+	display: inline-block;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin: 0 .1em;
+	-webkit-backface-visibility: hidden;
+	@include border-radius($global-rounded);
+
+	@media screen and (min-width: $small-screen) {
+		margin: 1em .2em;
+		float: right;
+	}
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.twitter {
+	background: #55ACEE url(../img/icon-twitter.svg) no-repeat center center;
+	background-size: 1.2em 1.2em;
+}
+
+.facebook {
+	background: #3B5898 url(../img/icon-facebook.svg) no-repeat center center;
+	background-size: 1.2em 1.2em;
+}

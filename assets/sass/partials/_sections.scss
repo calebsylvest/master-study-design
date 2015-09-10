@@ -1,0 +1,163 @@
+/*
+  * 
+  * Sections
+  *
+  */
+
+// Section Container
+.feature-section {
+	margin: 5em 0;
+
+	@media screen and (min-width: $small-screen) {
+		margin: 8em 0;
+	}
+
+	// Global Section Icon
+	.section-icon {
+		width: 3.5em;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.section-title {
+		color: $primary-color;
+		text-align: center;
+		font-size: 2.4em;
+	}
+
+	.callout {
+		font-size: 1.3em;
+		color: $body-font-color;
+		text-align: center;
+		margin: 0 auto 2em;
+		max-width: 27em;
+
+		@media screen and (min-width: $small-screen) {
+			margin-bottom: 4em;
+		}
+	}
+}
+
+
+// Small group inside Feature Section
+.feature-content {
+	margin-bottom: 3em;
+	text-align: center;
+
+	.feature-icon {
+		max-height: 4em;
+		margin-bottom: 1.5em;
+	}
+
+	.icon-authority {
+		max-height: 3.3em;
+		margin-top: .2em;
+	}
+
+	.small-title {
+		color: $body-font-color;
+		font-size: 1.2em;
+
+		& + p {
+			font-size: .9em;
+			color: $body-font-color-alt;
+			max-width: 20em;
+			margin: 0 auto;
+		}
+	}
+}
+
+// FAQ Section
+
+.faq-questions {
+
+	h3 {
+		font-size: 1em;
+		font-weight: 500;
+		color: $primary-color;
+	}
+
+	p {
+		margin-bottom: 3em;
+	}
+}
+
+
+// Sign up section. Overwrite styles from base email signup
+#sign-up {
+	padding: 4em 0;
+	text-align: center;
+	background-color: $light-green-color;
+
+	.title {
+		color: $header-font-color;
+	}
+
+	.tagline {
+		color: $body-font-color;
+	}
+
+	.email-signup-button {
+		background-color: $header-font-color;
+		//background-color: $secondary-color;
+		//border-color: $dark-green-color;
+		
+		//&::-webkit-input-placeholder {
+		//	color: lighten($body-font-color, 20%);
+		//}
+
+		&:hover {
+			//border-color: darken($dark-green-color, 10%);
+			background-color: lighten($header-font-color, 5%);
+		}
+
+		&.active,
+		&:focus {
+			background-color: white;
+			color: $body-font-color;
+
+			&::-webkit-input-placeholder {
+				color: $body-font-color-alt;
+			}
+		}
+	}
+}
+
+
+// Who can teach section
+.stack-section {
+
+	.stack-feature {
+		text-align: center;
+		margin: 3em 0;
+
+		@media screen and (min-width: $small-screen) {
+			text-align: left;
+			margin: 5em 0;
+		}
+
+		img {
+			//max-width: 15em;
+			margin-bottom: 2em;
+		}
+
+		h3 {
+			font-size: 1.7em;
+			margin-top: 0;
+		}
+
+		p {
+			color: $body-font-color-alt;
+			max-width: 22em;
+
+			@media screen and (max-width: $small-screen) {
+				margin: 0 auto $paragraph-margin-bottom;
+			}
+		}
+	}
+
+	hr {
+		max-width: 8em;
+		margin: 0 auto;
+	}
+}
