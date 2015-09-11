@@ -1,0 +1,48 @@
+/*
+  * 
+  * Objects
+  *
+  */
+
+
+
+ul.project-grid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+
+  li.project-item {
+    border: 3px solid $dark-color;
+
+    @media screen and (min-width: $small-screen) {
+      float: left;
+      width: 30%;
+      margin: 0 1.5% 3%;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figcaption {
+      font-size: .9em;
+      color: $header-font-color;
+      border-top: 3px solid $dark-color;
+      padding: .8em 1.1em;
+
+      h4 {
+        font-size: 1em;
+        margin: 0;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: $base-letter-spacing;
+      }
+
+      p {
+        margin: 0;
+        line-height: 1;
+      }
+    }
+  }
+}

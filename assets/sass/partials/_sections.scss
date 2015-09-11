@@ -6,10 +6,10 @@
 
 // Section Container
 .feature-section {
-	margin: 5em 0;
+	padding: 5em 0;
 
 	@media screen and (min-width: $small-screen) {
-		margin: 8em 0;
+		padding: 8em 0;
 	}
 
 	// Global Section Icon
@@ -39,48 +39,24 @@
 }
 
 
-// Small group inside Feature Section
-.feature-content {
-	margin-bottom: 3em;
-	text-align: center;
+#study-material {
+	background-color: $primary-color;
 
-	.feature-icon {
-		max-height: 4em;
-		margin-bottom: 1.5em;
-	}
-
-	.icon-authority {
-		max-height: 3.3em;
-		margin-top: .2em;
-	}
-
-	.small-title {
-		color: $body-font-color;
-		font-size: 1.2em;
-
-		& + p {
-			font-size: .9em;
-			color: $body-font-color-alt;
-			max-width: 20em;
-			margin: 0 auto;
-		}
+	.section-title {
+		color: $header-font-color;
 	}
 }
 
-// FAQ Section
 
-.faq-questions {
 
-	h3 {
-		font-size: 1em;
-		font-weight: 500;
-		color: $primary-color;
-	}
 
-	p {
-		margin-bottom: 3em;
-	}
-}
+
+
+
+
+
+
+
 
 
 // Sign up section. Overwrite styles from base email signup
@@ -120,44 +96,5 @@
 				color: $body-font-color-alt;
 			}
 		}
-	}
-}
-
-
-// Who can teach section
-.stack-section {
-
-	.stack-feature {
-		text-align: center;
-		margin: 3em 0;
-
-		@media screen and (min-width: $small-screen) {
-			text-align: left;
-			margin: 5em 0;
-		}
-
-		img {
-			//max-width: 15em;
-			margin-bottom: 2em;
-		}
-
-		h3 {
-			font-size: 1.7em;
-			margin-top: 0;
-		}
-
-		p {
-			color: $body-font-color-alt;
-			max-width: 22em;
-
-			@media screen and (max-width: $small-screen) {
-				margin: 0 auto $paragraph-margin-bottom;
-			}
-		}
-	}
-
-	hr {
-		max-width: 8em;
-		margin: 0 auto;
 	}
 }

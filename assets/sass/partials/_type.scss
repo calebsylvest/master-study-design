@@ -256,3 +256,15 @@ acronym {
 abbr {
 	text-transform: none;
 }
+
+.dropcap:first-child:first-letter { 
+	float: left;
+	color: $primary-color;
+	font-size: 5.2em;
+	line-height: 40px;
+	//padding-top: 4px;
+	padding-right: .1em;
+	//padding-left: 3px;
+	font-family: $header-font-family;
+	font-weight: $header-font-weight;
+}
