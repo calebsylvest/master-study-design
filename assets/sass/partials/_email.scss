@@ -1,96 +1,45 @@
 /*
-  * 
-  * Email button form
-  *
-  */
+ * 
+ * Email button form
+ *
+ */
 
-// Email form container
-.email-signup-form {
+
+.field-group {
 	position: relative;
-	
-	// beta text
-	small {
-		font-size: 70%;
-		font-style: italic;
-		display: block;
-		margin: 2em auto;
-	}	
 }
 
-// email button
-.email-signup-button {
-	width: 10em;
-	border: none;
-	cursor: pointer;
-	outline: none;
-	@extend %pill-button;
-
-
-	// for full form style
-	//width: 16em;
-	//height: 2.5em;
-	//line-height: 2.5em;
-	//padding: 0 1em;
-	//border: 2px solid $primary-color;
-	//@include border-radius($global-rounded);
-	//@include transition(all .1s linear);
-
-	&.active {
-		width: 18em;
-		outline: none;
-		text-align: left;
-		cursor: inherit;
-	}
-
-	&:hover {
-		border-color: darken($primary-color, 10%);
-	}
+input.email {
+	border: 3px solid $dark-color;
+	padding: .9em;
+	background-color: transparent;
+	width: 100%;
+	height: 3.3em;
+	line-height: 3.3em;
 
 	&:focus {
-		//border-color: $dark-green-color;
-		//background-color: lighten($secondary-color, 10%);
+		background-color: #fff;
 	}
-
-	&::-webkit-input-placeholder {
-	 	color: $neutral-color;
-		
-		//&:focus {
-			//border-color: $dark-green-color;
-			//background-color: lighten($secondary-color, 10%);
-		//}
-	}	
 }
 
-
-
-// Arrow submit button
-.email-signup-submit {
-	width: 35px;
-	height: 35px;
+.email-button {
+	font-size: .9em;
+	height: 3.5em;
+	line-height: 3.9em;
+	background-color: $dark-color;
 	border: none;
-	text-indent: -9999px;
-	background: url(../img/arrow-circle-on-right.svg) no-repeat;
-	background-size: 13px;
-	background-position: 0 1px;
-	opacity: .25;
-	background-size: 33px;
-	display: inline-block;
-	@include transition(all .2s linear);
+	color: $neutral-color;
+	font-family: $header-font-family;
+	padding: 0 1em;
+	text-transform: uppercase;
+	letter-spacing: $base-letter-spacing;
 
-	display: none; // hide until input field is active
+	position: absolute;
+	top: 0;
+	right: 0;
 
-	&:hover {
-		opacity: .33;
+	&:hover,
+	&:focus {
+		background-color: $primary-color;
 	}
-
-	// show the submit button when input is clicked
-	&.show {
-		display: inline-block;
-		background-size: 33px;
-	}
-}
-
-// email form response message
-.response {
-	margin: 1em 0;
 }

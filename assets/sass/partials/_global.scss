@@ -22,6 +22,10 @@
 // Override outline from normalize, we don't like it
 a:focus { outline: none; }
 
+:focus {
+  outline: lighten($primary-color, 30%) solid 3px;
+}
+
 // Responsive images and other embedded objects
 img,
 object,

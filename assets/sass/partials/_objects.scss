@@ -14,15 +14,25 @@ ul.project-grid {
 
   li.project-item {
     border: 3px solid $dark-color;
+    margin: 0 auto 2em;
 
-    @media screen and (min-width: $small-screen) {
+    @media screen and (min-width: $small-screen - 150px) {
       float: left;
+      width: 48%;
+      margin: 0 1% 3%;
+    }
+
+    @media screen and (min-width: $medium-screen) {
       width: 30%;
       margin: 0 1.5% 3%;
     }
 
     figure {
-      margin: 0;
+      margin: 0; 
+
+      img {
+        width: 100%;
+      }     
     }
 
     figcaption {
@@ -30,6 +40,10 @@ ul.project-grid {
       color: $header-font-color;
       border-top: 3px solid $dark-color;
       padding: .8em 1.1em;
+      background-image: url(../img/icons/icon-eye.svg);
+      background-repeat: no-repeat;
+      background-position: 98% center;
+      background-size: 2em;
 
       h4 {
         font-size: 1em;
@@ -44,5 +58,58 @@ ul.project-grid {
         line-height: 1;
       }
     }
+
+    .coming-soon {
+      color: $neutral-color;
+      background-color: $dark-color;
+      position: relative;
+
+      img {
+        opacity: .4;
+      }
+
+      > span {
+        font-family: $header-font-family;
+        font-size: 1.5em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include transform( translateX(-50%) translateY(-50%) );
+      }
+    }
+  }
+}
+
+.submit-item {
+  text-align: center;
+
+  > a {
+    display: block;
+    padding: 3em;
+  }
+
+  img {
+    width: 5em;
+  }
+}
+
+.well {
+  background-color: #f9f8f5;
+  padding: 2em 2.5em;
+  margin: 0 -2.5em;
+  @include border-radius($global-radius);
+}
+
+.email-well {
+
+  h4 {
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: $base-letter-spacing;
+  }
+
+  p {
+    font-size: .9em;
+    margin: .8em 0;
   }
 }

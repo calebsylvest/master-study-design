@@ -45,9 +45,9 @@
 
 <div class="wrapper">
 
-	<!--<header class="site-header clearfix">
+	<header class="site-header clearfix">
 
-		<a class="site-logo" href="#">
+		<!--<a class="site-logo" href="#">
 			<img src="assets/img/logo-coursemakers.svg" alt="CourseMakers">
 		</a>
 		<a class="site-name" href="#">
@@ -63,9 +63,13 @@
 				<li><a class="facebook share-button" href="http://www.facebook.com/sharer.php?u=http://coursemakers.com/" target="_blank">Share on Facebook</a></li>
 				<li><a class="twitter share-button" href="http://twitter.com/share?url=http://coursemakers.com/&text=CourseMakers helps designers and developers package, promote, and sell their knowledge -&via=CourseMakers" target="_blank">Share on Twitter</a></li>
 			</ul>
-		</nav>
+		</nav>-->
 
-	</header>-->
+		<a href="#!" class="nav-tab">
+			Notify me
+		</a>
+
+	</header>
 
 	<section id="hero">
 
@@ -95,25 +99,34 @@
 				<p>Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
 
 				<!-- Begin MailChimp Signup Form -->
-				<div id="mc_embed_signup">
-				<form action="//calebsylvest.us8.list-manage.com/subscribe/post?u=f6043f144817300a60ada7d17&amp;id=867d24055f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				    <div id="mc_embed_signup_scroll">
-					
-				<div class="mc-field-group">
-					<label for="mce-EMAIL">Email Address </label>
-					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-				</div>
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_f6043f144817300a60ada7d17_867d24055f" tabindex="-1" value=""></div>
-				    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-				    </div>
-				</form>
-				</div>
+				<div id="mc_embed_signup" class="email-well well">
 
-				<!--End mc_embed_signup-->
+					<h4>Join the email Newsletter</h4>
+					<p>You will receive infrequent notifications for new posts and design learning tips. Nothing more, nothing less, and absolutly no spam!</p>
+					
+					<form action="//calebsylvest.us8.list-manage.com/subscribe/post?u=f6043f144817300a60ada7d17&amp;id=867d24055f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					   
+					  <div id="mc_embed_signup_scroll">
+						
+							<div class="field-group">
+								<!--label for="mce-EMAIL">Email Address </label-->
+								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email...">
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="email-button">
+							</div>
+							
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>    
+
+							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						  <div style="position: absolute; left: -5000px;"><input type="text" name="b_f6043f144817300a60ada7d17_867d24055f" tabindex="-1" value=""></div>
+						 
+					  
+					  </div>
+					</form>
+				
+				</div><!--End mc_embed_signup-->
 
 			</div><!-- /column -->
 
@@ -145,7 +158,10 @@
 					<li class="project-item">
 						<a href="#!">
 							<figure>
-								<img src="assets/img/projects/ronnie-johnson.jpg" alt="Camping Screenprint by Jake Dugard">
+								<div class="coming-soon">
+									<span>Coming Soon</span>
+									<img src="assets/img/projects/ronnie-johnson.jpg" alt="Camping Screenprint by Jake Dugard">
+								</div>
 								<figcaption>
 									<h4>Jake Dugard</h4>
 									<p>Camping Screenprint</p>
@@ -153,11 +169,17 @@
 							</figure>
 						</a>
 					</li>
+					<li class="project-item submit-item">
+						<a href="#!">
+							<img class="submit-image" src="assets/img/icons/icon-submit.svg" alt="">
+							<h4>Make a study recommendation</h4>
+						</a>
+					</li>
 
 				</ul>
 
 			</div>
-			
+
 		</div><!-- /row -->
 
 	</section><!-- /study-material -->

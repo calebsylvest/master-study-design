@@ -5,51 +5,30 @@
   */
 
 // header container
-.site-header {
-	text-align: center;
 
-	@media screen and (min-width: $small-screen) {
-		height: 60px;
-		line-height: 60px;
-	}
-}
 
-.site-brand {
-
-	@media screen and (min-width: $small-screen) {
-		float: left;
-	}
-
+a.nav-tab {
+	position: fixed;
+	top: 3em;
+	right: 0;
 	
+	font-size: .7em;
+	font-family: $header-font-family;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	padding: 1em 2em 1em 4em;
+	background-color: $dark-color;
+	color: $neutral-color;
+	z-index: 999;
 
-	
-}
+	background-image: url(../img/icons/icon-mail.svg);
+	background-repeat: no-repeat;
+	background-size: 1.6em;
+	background-position: 1em center;
 
-.site-logo {
-	width: 3.5em;
-	display: inline-block;
-	margin: 1em;
-
-	@media screen and (min-width: $small-screen) {
-		float: left;
-		margin: .4em 1em;
-	}
-}
-.site-name {
-	display: block;
-	margin: 0 0 1.5em;
-
-	@media screen and (min-width: $small-screen) {
-		float: left;
-	}
-
-	h1 {
-		font-size: 1em;
-
-		@media screen and (min-width: $small-screen) {
-			margin: 0;
-			line-height: 4.7em;
-		}
+	&:hover {
+		background-color: $primary-color;
+		padding: 1em 3em 1em 4em;
 	}
 }
 
